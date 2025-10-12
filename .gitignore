@@ -1,0 +1,16 @@
+# Ignorar dataset de la práctica 1
+p1/full_data_flightdelay.csv
+
+# Archivos auxiliares de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
+*.lof
+*.lot
+
