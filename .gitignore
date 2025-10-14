@@ -1,5 +1,7 @@
 # Ignorar dataset de la práctica 1
 p1/full_data_flightdelay.csv
+p1/balanced_data_flightdelay.csv
+
 
 # Archivos auxiliares de LaTeX
 *.aux
