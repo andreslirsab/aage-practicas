@@ -77,32 +77,32 @@ de vuelos.
 \begin{tabular}{|l|c|l|}
 \hline
 \textbf{Variable} & \textbf{Tipo} & \textbf{Descripción} \\ \hline
-MONTH & Discreta & Mes del vuelo \\ \hline
-DAY\_OF\_WEEK & Discreta & Día de la semana (1=lunes) \\ \hline
-DEP\_DEL15 & Binaria & Salida retrasada 15 min o más (1=sí) \\ \hline
-DEP\_TIME\_BLK & Discreta & Bloque horario de salida \\ \hline
-DISTANCE\_GROUP & Discreta & Grupo de distancia del vuelo \\ \hline
-SEGMENT\_NUMBER & Continua & Vuelos previos del avión hoy \\ \hline
-CONCURRENT\_FLIGHTS & Continua & Vuelos simultáneos en el mismo bloque \\ \hline
-NUMBER\_OF\_SEATS & Continua & Número de asientos \\ \hline
-CARRIER\_NAME & Continua & Aerolínea \\ \hline
-AIRPORT\_FLIGHTS\_MONTH & Continua & Promedio de vuelos aeropuerto/mes \\ \hline
-AIRLINE\_FLIGHTS\_MONTH & Continua & Promedio de vuelos aerolínea/mes \\ \hline
-AIRLINE\_AIRPORT\_FLIGHTS\_MONTH & Continua & Promedio de vuelos aerolínea+ aeropuerto/mes \\ \hline
-AVG\_MONTHLY\_PASS\_AIRPORT & Continua & Promedio pasajeros aeropuerto/mes \\ \hline
-AVG\_MONTHLY\_PASS\_AIRLINE & Continua & Promedio pasajeros aerolínea/mes \\ \hline
-FLT\_ATTENDANTS\_PER\_PASS & Continua & Tripulantes por pasajero \\ \hline
-GROUND\_SERV\_PER\_PASS & Continua & Personal tierra por pasajero \\ \hline
-PLANE\_AGE & Continua & Edad del avión \\ \hline
-DEPARTING\_AIRPORT & Continua & Aeropuerto de salida \\ \hline
-LATITUDE & Continua & Latitud aeropuerto \\ \hline
-LONGITUDE & Continua & Longitud aeropuerto \\ \hline
-PREVIOUS\_AIRPORT & Continua & Aeropuerto previo \\ \hline
-PRCP & Continua & Precipitación (pulgadas) \\ \hline
-SNOW & Continua & Nieve caída (pulgadas) \\ \hline
-SNWD & Continua & Profundidad de nieve (pulgadas) \\ \hline
-TMAX & Continua & Temp. máxima (°F) \\ \hline
-AWND & Continua & Velocidad máxima viento (m/s) \\ \hline
+MONTH & Numérica & Mes del vuelo \\ \hline
+DAY\_OF\_WEEK & Numérica & Día de la semana (1 = Lunes) \\ \hline
+DEP\_DEL15 & Binaria & Salida retrasada 15 min o más (1 = Retrasado) \\ \hline
+DEP\_TIME\_BLK & Categórica & Bloque horario de salida \\ \hline
+DISTANCE\_GROUP & Numérica & Grupo de distancia del vuelo \\ \hline
+SEGMENT\_NUMBER & Numérica & Vuelos previos del avión hoy \\ \hline
+CONCURRENT\_FLIGHTS & Numérica & Vuelos simultáneos en el mismo bloque \\ \hline
+NUMBER\_OF\_SEATS & Numérica & Número de asientos \\ \hline
+CARRIER\_NAME & Categórica & Aerolínea \\ \hline
+AIRPORT\_FLIGHTS\_MONTH & Numérica & Promedio de vuelos aeropuerto/mes \\ \hline
+AIRLINE\_FLIGHTS\_MONTH & Numérica & Promedio de vuelos aerolínea/mes \\ \hline
+AIRLINE\_AIRPORT\_FLIGHTS\_MONTH & Numérica & Promedio de vuelos aerolínea+ aeropuerto/mes \\ \hline
+AVG\_MONTHLY\_PASS\_AIRPORT & Numérica & Promedio pasajeros aeropuerto/mes \\ \hline
+AVG\_MONTHLY\_PASS\_AIRLINE & Numérica & Promedio pasajeros aerolínea/mes \\ \hline
+FLT\_ATTENDANTS\_PER\_PASS & Numérica & Tripulantes por pasajero \\ \hline
+GROUND\_SERV\_PER\_PASS & Numérica & Personal tierra por pasajero \\ \hline
+PLANE\_AGE & Numérica & Edad del avión \\ \hline
+DEPARTING\_AIRPORT & Categórica & Aeropuerto de salida \\ \hline
+LATITUDE & Numérica & Latitud aeropuerto \\ \hline
+LONGITUDE & Numérica & Longitud aeropuerto \\ \hline
+PREVIOUS\_AIRPORT & Categórica & Aeropuerto previo \\ \hline
+PRCP & Numérica & Precipitación (pulgadas) \\ \hline
+SNOW & Numérica & Nieve caída (pulgadas) \\ \hline
+SNWD & Numérica & Profundidad de nieve (pulgadas) \\ \hline
+TMAX & Numérica & Temp. máxima (°F) \\ \hline
+AWND & Numérica & Velocidad máxima viento (m/s) \\ \hline
 \end{tabular}
 \end{table}
 
@@ -120,13 +120,15 @@ del vuelo (aerolínea, origen, destino, mes, día de la semana) y condiciones me
 en el aeropuerto de origen.
 
 Para resolver el problema se emplearán distintos modelos de Spark MLlib, haciendo uso de 
-diferentes algoritmos, características o hiperparámetros. Estos modelos se evaluarán de 
+diferentes algoritmos, características o hiperparámetros de manera justificada. Estos modelos se evaluarán de 
 acuerdo a métricas adecuadas al problema.
 
 
-\section{Preprocesamiento de datos}
+\section{Análisis exploratorio de datos (EDA)}
 
-bla bla bla
+En esta sección se llevará a cabo un análisis exploratorio de los datos para comprender mejor las características
+ del dataset y la relación entre las variables. Se utilizarán técnicas de visualización y estadísticas descriptivas 
+ para identificar patrones, tendencias y posibles problemas en los datos.
 
 \begin{table}
 \caption{Table captions should be placed above the
